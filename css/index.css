@@ -13,7 +13,7 @@ header{
 #top-bar-main{
     width: 1920px;
     height: 143px;
-    background:rgba(13,77,105,0.7);
+    background:rgba(13,77,105,0.4);
     margin: 0 auto;
 }
 #top-bar{
@@ -45,14 +45,14 @@ header{
 }
 .top-bar-two-item-main{
     width: 190px;
-    height: 57px;
-    margin-top: 57px;
+    height: 70px;
+    margin-top: 47px;
     margin-left: 35px;
     background: url("../img/little-bar_03.png") no-repeat center/100% auto;
 }
 .top-bar-two-item-main h4{
     font-size: 17px;
-    line-height: 25px;
+    line-height: 30px;
     color: #aeb1b4;
 }
 .top-bar-two-item-main h2{
@@ -142,42 +142,112 @@ header{
     font-weight: normal;
 }
 #f-pic-group-words2{
-    width: 1155px;
+    width: 1158px;
     height: 168px;
     position: absolute;
     top: 470px;
     left: 408px;
 }
 #f-pic-group-words2-top{
-    width: 1155px;
+    width: 1158px;
     height: 110px;
 }
 .f-pic-group-words2-top-item{
-    width: 385px;
-    padding-left: 66px;
+    width: 384px;
+    padding-left: 60px;
     height: 110px;
     float: left;
+    margin-left: 1px;
 }
-.pic-item-num{
+.f-pic-group-words2-top-item:nth-child(1) h2{
+    padding-top: 2px;
     float: left;
-    padding-left: 20px;
+    padding-left: 24px;
+    color: #40d1f1;
 }
+.f-pic-group-words2-top-item:nth-child(2) h2{
+    padding-top: 2px;
+    float: left;
+    padding-left: 24px;
+    color: #f0c310;
+}
+.f-pic-group-words2-top-item:nth-child(3) h2{
+    padding-top: 2px;
+    float: left;
+    padding-left: 24px;
+    color: #32d486;
+}
+.pic-item-divider{
+    height: 43px;
+    border-right: #bfbfbf dashed 2px;
+    float: left;
+    padding-left: 13px;
+    margin-top: 7px;
+    position: relative;
+}
+.pic-item-divider:before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    width: 5px;
+    height: 5px;
+    background: #585857;
+    border-radius: 50%;
+}
+
+.pic-item-divider:after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 40px;
+    width: 5px;
+    height: 5px;
+    background: #585857;
+    border-radius: 50%;
+}
+
 .pic-item-words{
     padding-top: 7px;
-    padding-left: 25px;
+    padding-left: 13px;
     float: left;
 }
 .pic-item-num h2{
-    font-size: 46px;
+    font-size: 40px;
+    line-height: 46px;
 }
 .pic-item-words h4{
     color: #505050;
     font-size: 20px;
     font-weight: normal;
     line-height: 23px;
+    float: left;
+}
+.f-pic-group-words2-top-item:nth-child(1) h1{
+    font-size: 20px;
+    line-height: 20px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 5px;
+    color: #40d1f1;
+}
+.f-pic-group-words2-top-item:nth-child(2) h1{
+    font-size: 20px;
+    line-height: 20px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 5px;
+    color: #f0c310;
+}
+.f-pic-group-words2-top-item:nth-child(3) h1{
+    font-size: 20px;
+    line-height: 20px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 5px;
+    color: #32d486;
 }
 #f-pic-group-words2-bottom{
-    width: 1155px;
+    width: 1156px;
     height: 58px;
     padding-left: 66px;
 }
@@ -221,7 +291,7 @@ header{
     border-radius: 4px;
     padding-top: 27px;
     padding-left: 20px;
-    display: none; /*点到搜索框才能看到效果*/
+    /*display: none;*/ /*点到搜索框才能看到效果*/
     z-index: 99;
 }
 
@@ -243,13 +313,14 @@ header{
 
 #header-filter label {
     float: left;
-    font-size: 18px;
+    font-size: 15px;
     font-family: "AR PL UKai TW";
 }
 
 #header-filter label input {
-    margin-right: 5px;
-    vertical-align: bottom;
+    margin-right: 3px;
+    margin-left: 3px;
+    vertical-align: center;
 }
 
 #header-divider {
